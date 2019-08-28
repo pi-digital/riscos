@@ -115,6 +115,7 @@
 
 /* Content */
 .content section {
+	background: #fff;
 	font-size: 1.25em;
 	padding: 3em 1em;
 	display: none;
