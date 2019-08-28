@@ -41,6 +41,7 @@
 	clear: both;
 }
 body {
+	margin: 0;
 	background: #fff;
 	font-weight: 400;
 	font-size: 1em;
