@@ -42,7 +42,8 @@
 }
 body {
 	margin: 0;
-	background: #fff;
+	background: #131313;
+	color: #308fd9;
 	font-weight: 400;
 	font-size: 1em;
 	font-family: 'Roboto Condensed';
