@@ -115,7 +115,7 @@ a:focus {
 
 /* Header */
 .codrops-header {
-	padding: 3em 3em 0;
+	padding: 3em;
 	letter-spacing: -1px;
 }
 .codrops-header h1 {
@@ -124,6 +124,7 @@ a:focus {
 	font-size: 6em;
 	line-height: 1.15;
 	margin-bottom: 0;
+	margin-top: 0.25em;
 	padding: 0px 50px 0px 50px;
 	text-align: center;
 	color: #308fd9;
