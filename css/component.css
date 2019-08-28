@@ -93,23 +93,23 @@
 	margin: -0.25em 0.4em 0 0;
 }
 
-.icon-food:before {
+.icon-bell:before {
 	content: "\e600";
 }
 
-.icon-lab:before {
+.icon-truck:before {
 	content: "\e601";
 }
 
-.icon-cup:before {
+.icon-trophy:before {
 	content: "\e602";
 }
 
-.icon-truck:before {
+.icon-price-tags:before {
 	content: "\e603";
 }
 
-.icon-shop:before {
+.icon-files-empty:before {
 	content: "\e604";
 }
 
