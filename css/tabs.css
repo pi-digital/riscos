@@ -163,7 +163,6 @@
 
 /* Fallback */
 .no-js .content-wrap section {
-	display: block;
 	padding-bottom: 2em;
 	border-bottom: 1px solid rgba(255,255,255,0.6);
 }
