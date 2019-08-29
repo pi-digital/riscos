@@ -29,16 +29,14 @@
 	}
 
 	CBPFWTabs.prototype.options = {
-		nav : 'nav',
-		start : 0,
-		skip : []
+		start : 0
 	};
 
 	CBPFWTabs.prototype._init = function() {
-		// tabs elemes
-		this.tabs = [].slice.call( this.el.querySelectorAll( this.options.nav + ' > ul > li' ) );
+		// tabs elems
+		this.tabs = [].slice.call( this.el.querySelectorAll( 'nav > ul > li' ) );
 		// content items
-		this.items = [].slice.call( this.el.querySelectorAll( '.content > section' ) );
+		this.items = [].slice.call( this.el.querySelectorAll( '.content-wrap > section' ) );
 		// current index
 		this.current = -1;
 		// show current content item
@@ -49,27 +47,22 @@
 
 	CBPFWTabs.prototype._initEvents = function() {
 		var self = this;
-		var skip = this.options.skip;
-        this.tabs.forEach( function( tab, idx ) {
-            if (skip.indexOf(idx) == -1) {
-                tab.addEventListener( 'click', function( ev ) {
-                    ev.preventDefault();
-                    self._show( idx );
-                } );
-            }
-        } );
+		this.tabs.forEach( function( tab, idx ) {
+			tab.addEventListener( 'click', function( ev ) {
+				ev.preventDefault();
+				self._show( idx );
+			} );
+		} );
 	};
 
 	CBPFWTabs.prototype._show = function( idx ) {
 		if( this.current >= 0 ) {
-			// remove and add class thanks to Apollo.js (github.com/toddmotto/apollo)
-            this.tabs[ this.current ].className = this.tabs[ this.current ].className.replace(new RegExp('(^|\\s)*' + 'tab-current' + '(\\s|$)*', 'g'), '');
-            this.items[ this.current ].className = this.items[ this.current ].className.replace(new RegExp('(^|\\s)*' + 'content-current' + '(\\s|$)*', 'g'), '');
+			this.tabs[ this.current ].className = this.items[ this.current ].className = '';
 		}
 		// change current
 		this.current = idx != undefined ? idx : this.options.start >= 0 && this.options.start < this.items.length ? this.options.start : 0;
-		this.tabs[ this.current ].className += (this.tabs[ this.current ].className ? ' ' : '') + 'tab-current';
-		this.items[ this.current ].className += (this.items[ this.current ].className ? ' ' : '') + 'content-current';
+		this.tabs[ this.current ].className = 'tab-current';
+		this.items[ this.current ].className = 'content-current';
 	};
 
 	// add to global namespace
