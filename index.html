@@ -13,7 +13,8 @@
 		<link rel="stylesheet" type="text/css" href="css/demo.css">
 		<link rel="stylesheet" type="text/css" href="css/tabs.css">
 		<link rel="stylesheet" type="text/css" href="css/tabstyles.css">
-  		<script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script src="js/modernizr.custom.js"></script>
+  		<script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script>
+		<script src="js/modernizr.custom.js"></script>
 	<script type="text/javascript">
 var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-7243260-2']);
@@ -24,7 +25,18 @@ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www')
 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 })();
 </script>
+<script>
+			(function() {
 
+				[].slice.call( document.querySelectorAll( '.tabs' ) ).forEach( function( el ) {
+					new CBPFWTabs( el );
+				});
+
+			})();
+		</script>
+		<script src="//tympanus.net/codrops/adpacks/demoad.js"></script>
+		<script type="text/javascript" src="https://servedby.revive-adserver.net/ajs.php?zoneid=470&amp;cb=49306422138&amp;charset=UTF-8&amp;loc=https%3A//tympanus.net/Development/TabStylesInspiration/"></script>
+		
 	<link rel="stylesheet" type="text/css" href="https://tympanus.net/codrops/adpacks/demoad.css?1567077121207"></head>
 	<body>
 		<svg class="hidden">
