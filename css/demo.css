@@ -30,7 +30,7 @@
 
 body {
 	background: #fff;
-	font-family: 'Arial';
+	font-family: 'Roboto Condensed';
 }
 
 a {
@@ -73,7 +73,7 @@ a:hover, a:focus {
 }
 
 p {
-	font-family: 'Arial';
+	font-family: 'Roboto Condensed';
 	font-weight: 200;
 	font-size: 1em;
 	padding: 0px 50px 10px 50px;
@@ -100,7 +100,7 @@ p {
 }
 
 .codrops-header h1 {
-	font-family: 'Arial';
+	font-family: 'Roboto Condensed';
 	font-weight: 600;
 	font-size: 6em;
 	line-height: 1.15;
@@ -120,7 +120,7 @@ p {
 }
 
 .codrops-header h2 {
-	font-family: 'Arial';
+	font-family: 'Roboto Condensed';
 	font-weight: 200;
 	font-size: 4em;
 	line-height: 1.15;
@@ -131,7 +131,7 @@ p {
 }
 
 .codrops-header h3 {
-        font-family: 'Arial';
+        font-family: 'Roboto Condensed';
 	text-transform: uppercase;
 	display: block;
 	letter-spacing: 2px;
@@ -145,7 +145,7 @@ p {
 }
 
 .codrops-header h5 {
-        font-family: 'Arial';
+        font-family: 'Roboto Condensed';
 	text-transform: uppercase;
 	display: block;
 	letter-spacing: 2px;
