@@ -393,7 +393,6 @@ p {
 	content: '';
 	width: 100%;
 	background: #fff;
-	height: 100%;
 	position: absolute;
 	top: 0;
 }
