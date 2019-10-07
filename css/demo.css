@@ -384,7 +384,7 @@ p {
 .mockup-slider {
 	position: relative;
 	width: calc(100% - 12em);
-	margin: 0 0 0 2em;
+	margin: 0;
 	max-width: 600px;
 }
 
@@ -392,7 +392,7 @@ p {
 .mockup-slider::after {
 	content: '';
 	width: 100%;
-	background: rgba(0,0,0,0.05);
+	background: #fff;
 	height: 100px;
 	position: absolute;
 	top: 0;
@@ -403,12 +403,43 @@ p {
 	bottom: 0;
 }
 
-.mockup-slider img {
-	position: relative;
+.mockup-slider h2 {
+	font-family: 'Roboto Condensed';
+	font-weight: 200;
+	font-size: 4em;
+	line-height: 1.15;
+	margin-bottom: 0;
+	padding: 0px 50px 0x 50px;
+	text-align: center;
+	color: rgb(51, 51, 51);
+}
+
+.mockup-slider h3 {
+        font-family: 'Roboto Condensed';
+	text-transform: uppercase;
 	display: block;
-	max-width: 100%;
-	margin: 150px 0;
-	box-shadow: 0 10px 20px -4px rgba(0,0,0,0.6);
+	letter-spacing: 2px;
+	font-weight: 300;
+	font-size: 1em;
+	margin-top: 16px;
+	margin-bottom: 16px;
+	padding: 0px 50px 50px 50px;
+	text-align: center;
+	color: rgb(51, 51, 51);
+}
+
+.mockup-slider h5 {
+        font-family: 'Roboto Condensed';
+	text-transform: uppercase;
+	display: block;
+	letter-spacing: 2px;
+	font-weight: 300;
+	font-size: 1em;
+	margin-top: 16px;
+	margin-bottom: 16px;
+	padding: 0px 50px 50px 50px;
+	text-align: center;
+	color: rgb(51, 51, 51);
 }
 
 .mockup-slider__title {
@@ -424,9 +455,6 @@ p {
 	position: absolute;
 	top: 70%;
 	left: -1em;
-	background: #1b3050;
-	margin: 0;
-	color: #fff;
 	font-size: 1.05em;
 	padding: 0.25em 0.5em;
 	z-index: 100;
