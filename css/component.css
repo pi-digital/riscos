@@ -311,8 +311,8 @@
 /*** Ubax ***/
 
 .nav--ubax .nav__item {
-	width: 1.5em;
-	height: 1.5em;
+	width: 1em;
+	height: 1em;
 }
 
 .nav--ubax .nav__item::after {
