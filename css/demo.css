@@ -24,75 +24,33 @@
 	font-style: normal;
 }
 
-*, *:after, *:before { -webkit-box-sizing: border-box; box-sizing: border-box; }
-.clearfix:before, .clearfix:after { content: ''; display: table; }
-.clearfix:after { clear: both; }
+*, *::after, *::before { -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 body {
-	background: #fff;
-	font-family: 'Roboto Condensed';
+	font-family: 'Roboto Mono', monospace;
+	color: #1b3050;
+	background: #f9f0d0;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
 
 a {
-	color: #308fd9;
 	text-decoration: none;
+	color: #8bc34a;
 	outline: none;
 }
 
-a:hover, a:focus {
-	color: #74777b;
-}
-
-.support {
-	display: none;
-	color: #ef5189;
-	text-align: left;
-	font-size: 1.5em;
-	max-width: 1200px;
-	margin: 1em auto 0;
-	padding: 0;
-}
-
-.no-flexbox .support {
-	display: block;
+a:hover,
+a:focus {
+	color: #fff;
 }
 
 .hidden {
 	position: absolute;
+	overflow: hidden;
 	width: 0;
 	height: 0;
-	overflow: hidden;
-	opacity: 0;
-}
-
-.container > section {
-	padding: 0;
-	font-size: 1.25em;
-	min-height: 100%;
-	display: inline;
-}
-
-p {
-	font-family: 'Roboto Condensed';
-	font-weight: 200;
-	font-size: 1em;
-	padding: 0px 50px 10px 50px;
-	text-align: left;
-	color: rgb(51, 51, 51);
-	text-align: left;
-}
-
-.footer {
-   position: relative;
-   display: block;
-   left: 0;
-   bottom: 0;
-   padding: 48px 98px;
-   width: 100%;
-   color: white;
-   text-align: right;
+	pointer-events: none;
 }
 
 /* Icons */
@@ -106,67 +64,34 @@ p {
 
 /* Header */
 .codrops-header {
-	padding: 3em 3em 0 3em;
-	letter-spacing: -1px;
-}
-
-.codrops-header h1 {
-	font-family: 'Roboto Condensed';
-	font-weight: 600;
-	font-size: 6em;
-	line-height: 1.15;
-	margin-bottom: 0;
-	margin-top: 0.25em;
-	padding: 0px 50px 0px 50px;
+	position: relative;
+	height: 100vh;
+	min-height: 600px;
+	padding: 0em 1em 4em;
 	text-align: center;
-	color: #308fd9;
+	color: #4a4244;
+	background: #b7f372 url(../img/mouse.svg) no-repeat left 50% bottom 40px;
 }
 
-.codrops-header h1 span {
+.codrops-header a:hover,
+.codrops-header a:focus {
+	color: #333;
+}
+
+.codrops-header__pretitle {
 	display: block;
-	font-size: 50%;
-	font-weight: 400;
-	padding-top: 0.325em;
-	color: #bdc2c9;
+	margin: 1em 0 0.5em;
+	font-size: 1.5em;
 }
 
-.codrops-header h2 {
-	font-family: 'Roboto Condensed';
-	font-weight: 200;
-	font-size: 4em;
-	line-height: 1.15;
-	margin-bottom: 0;
-	padding: 0px 50px 0x 50px;
-	text-align: center;
-	color: rgb(51, 51, 51);
-}
-
-.codrops-header h3 {
-        font-family: 'Roboto Condensed';
-	text-transform: uppercase;
-	display: block;
-	letter-spacing: 2px;
-	font-weight: 300;
-	font-size: 1em;
-	margin-top: 16px;
-	margin-bottom: 16px;
-	padding: 0px 50px 50px 50px;
-	text-align: center;
-	color: rgb(51, 51, 51);
-}
-
-.codrops-header h5 {
-        font-family: 'Roboto Condensed';
-	text-transform: uppercase;
-	display: block;
-	letter-spacing: 2px;
-	font-weight: 300;
-	font-size: 1em;
-	margin-top: 16px;
-	margin-bottom: 16px;
-	padding: 0px 50px 50px 50px;
-	text-align: center;
-	color: rgb(51, 51, 51);
+.codrops-header__title {
+	font-size: 2.75em;
+	font-weight: normal;
+	line-height: 1;
+	position: relative;
+	z-index: 10;
+	margin: 0;
+	color: #333;
 }
 
 /* Top Navigation Style */
@@ -323,51 +248,6 @@ p {
 		animation: octocat-wave 560ms ease-in-out;
 	}
 
-}
-
-/* To Navigation Style */
-.codrops-top {
-	width: 100%;
-	text-transform: uppercase;
-	font-weight: 700;
-	font-size: 0.69em;
-	line-height: 2.2;
-}
-
-.codrops-top a {
-	display: inline-block;
-	padding: 1em 2em;
-	text-decoration: none;
-	letter-spacing: 1px;
-}
-
-.codrops-top span.right {
-	float: right;
-}
-
-.codrops-top span.right a {
-	display: block;
-	float: left;
-}
-
-.codrops-icon:before {
-	margin: 0 4px;
-	text-transform: none;
-	font-weight: normal;
-	font-style: normal;
-	font-variant: normal;
-	font-family: 'codropsicons';
-	line-height: 1;
-	speak: none;
-	-webkit-font-smoothing: antialiased;
-}
-
-.codrops-icon-drop:before {
-	content: "\e001";
-}
-
-.codrops-icon-prev:before {
-	content: "\e004";
 }
 
 /* Content */
@@ -684,3 +564,4 @@ p {
 		width: 100%;
 	}
 }
+
