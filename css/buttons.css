@@ -38,8 +38,8 @@
 
 /* Text color adjustments (we could stick to the "inherit" but that does not work well in Safari) */
 .bg-1 .button {
-	color: #37474f;
-	border-color: #37474f;
+	color: #308fd9;
+	border-color: #308fd9;
 }
 .bg-2 .button {
 	color: #ECEFF1;
