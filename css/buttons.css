@@ -1195,7 +1195,7 @@
 	transform: translate3d(0, -100%, 0) rotate3d(0, 0, 1, -10deg);
 }
 .button--naira.button--inverted::before {
-	background: #7986cb;
+	background: #308fd9;
 }
 .button--naira-up::before {
 	-webkit-transform: translate3d(0, 100%, 0) rotate3d(0, 0, 1, 10deg);
