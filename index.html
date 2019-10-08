@@ -56,7 +56,6 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 		</svg>
 		<div class="container">
 			<!-- Top Navigation -->
-			<div class="codrops-top clearfix"></div>
 			<header class="codrops-header">
 				<h1>Plano PI Digital</h1>
 				<h2>Monitoramento</h2>
@@ -138,7 +137,15 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 						</section>
 					</div><!-- /content -->
 				</div><!-- /tabs -->
-			<script src="js/clipboard.min.js"></script>
-		<script src="js/main.js"></script>
+		<script src="js/cbpFWTabs.js"></script>
+		<script>
+			(function() {
+
+				[].slice.call( document.querySelectorAll( '.tabs' ) ).forEach( function( el ) {
+					new CBPFWTabs( el );
+				});
+
+			})();
+		</script>
 	</body>
 </html>
