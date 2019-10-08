@@ -568,7 +568,7 @@
 .tabs-style-shape nav li a span {
 	display: block;
 	overflow: hidden;
-	padding: 0.65em 0;
+	padding: 0.4em 0;
 	background-color: #bdc2c9;
 	text-overflow: ellipsis;
 	white-space: nowrap;
