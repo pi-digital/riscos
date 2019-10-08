@@ -16,7 +16,7 @@
 .button {
 	float: left;
 	min-width: 150px;
-	max-width: 250px;
+	max-width: 300px;
 	display: block;
 	margin: 1em;
 	padding: 1em 2em;
@@ -1103,7 +1103,7 @@
 	border: none;
 	padding: 0px;
 	overflow: hidden;
-	width: 255px;
+	width: 300px;
 }
 .button--itzel::before {
 	content: '';
