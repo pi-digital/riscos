@@ -14,8 +14,7 @@
 /* Common button styles */
 .button {
 	float: left;
-	min-width: 150px;
-	max-width: 300px;
+	width: 250px;
 	display: block;
 	margin: 1em;
 	padding: 1em 2em;
@@ -250,7 +249,6 @@
 .button--tamaya {
 	overflow: hidden;
 	color: #7986cb;
-	min-width: 180px;
 }
 .button--tamaya.button--inverted {
 	color: #308fd9;
