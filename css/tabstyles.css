@@ -570,6 +570,7 @@
 	overflow: hidden;
 	padding: 0.4em 0;
 	background-color: #bdc2c9;
+	border: #1693eb;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 }
