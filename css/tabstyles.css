@@ -555,6 +555,7 @@
 	width: 3em;
 	height: 100%;
 	fill: #bdc2c9;
+	border: #1693eb;
 }
 
 .tabs-style-shape nav li a svg:nth-child(2),
@@ -572,6 +573,7 @@
 	background-color: #bdc2c9;
 	text-overflow: ellipsis;
 	white-space: nowrap;
+	border: #1693eb;
 }
 
 .tabs-style-shape nav li a:hover span {
