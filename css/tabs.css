@@ -142,6 +142,7 @@
 /* Content */
 .content-wrap {
 	position: relative;
+	background: #fff;
 }
 
 .content-wrap section {
