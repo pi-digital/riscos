@@ -20,6 +20,17 @@
 	font-size: 1.25em;
 }
 
+.h5 {
+	font-family: 'Roboto Condensed';
+	text-transform: uppercase;
+	display: block;
+	letter-spacing: 2px;
+	font-weight: 300;
+	font-size: 1em;
+	text-align: left;
+	color: rgb(51, 51, 51);
+}
+
 /* Nav */
 .tabs nav {
 	text-align: center;
