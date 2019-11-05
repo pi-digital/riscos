@@ -191,12 +191,12 @@ a:focus {
 
 /* Jinpa */
 .pricing--jinpa .pricing__item {
-	font-family: 'Sahitya', serif;
+	font-family: 'Roboto Condensed';
 	margin: 1.5em 0;
 	padding: 2em;
 	cursor: default;
-	color: #fff;
-	border: 1px solid #CBFFC8;
+	color: #308fd9;
+	border: 1px solid #308fd9;
 	-webkit-transition: background-color 0.6s, color 0.3s;
 	transition: background-color 0.6s, color 0.3s;
 }
