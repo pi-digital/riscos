@@ -212,7 +212,9 @@ a:focus {
 }
 
 .pricing--jinpa .pricing__title {
-	font-size: 1.5em;
+	font-size: 1em;
+	font-weight: 300;
+	text-transform: uppercase;
 	width: 100%;
 	margin: 0;
 	padding: 0;
