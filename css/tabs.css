@@ -20,17 +20,6 @@
 	font-size: 1.25em;
 }
 
-.h5 {
-	font-family: 'Roboto Condensed';
-	text-transform: uppercase;
-	display: block;
-	letter-spacing: 2px;
-	font-weight: 300;
-	font-size: 1em;
-	text-align: left;
-	color: rgb(51, 51, 51);
-}
-
 /* Nav */
 .tabs nav {
 	text-align: center;
@@ -176,6 +165,17 @@
 	font-size: 20px;
 	text-shadow: 1px 1px 1px #fff;
 	line-height: 1.25em;
+}
+
+.content-wrap section h5 {
+	font-family: 'Roboto Condensed';
+	text-transform: uppercase;
+	display: block;
+	letter-spacing: 2px;
+	font-weight: 300;
+	font-size: 1em;
+	text-align: left;
+	color: rgb(51, 51, 51);
 }
 
 /* Fallback */
