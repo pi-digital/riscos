@@ -7,9 +7,9 @@
 	var pass="INPI100%Digital";
 	password=prompt('Digite a senha:', '');
 	if(password==pass)
-	alert('Senha correta. Clique em OK.');
+	alert('Senha correta.');
 	else
-	alert('Senha incorreta. Clique em OK.');
+	alert('Senha incorreta.');
 	{window.location="http://pi-digital.github.io/apresentacao";
 	}
 	//-->
@@ -136,6 +136,14 @@ tr {
   overflow: visible;
   font-size: 0.6em;
 }
+	
+#imgdiv {
+  width: 250px;
+  overflow: visible;
+  text-align: left;
+  padding-left: 30px;
+}
+	
 </style>
 
 <!-- Resources -->
@@ -358,6 +366,9 @@ chart.cursor = new am4charts.RadarCursor();
 </table>
 						</section>
 						<section id="section-underline-3">
+	<div id="imgdiv">
+		<img src="image/indicadores.png">
+	</div>
 	<div id="chartdiv"></div>
 	<div class="pricing pricing--jinpa">
                 <div class="pricing__item">
