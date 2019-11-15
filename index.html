@@ -134,6 +134,7 @@ tr {
   height: 750px;
   overflow: visible;
   padding: 10px;
+  font-size: 0.75em;
 }
 
 </style>
@@ -273,7 +274,7 @@ categoryAxis.renderer.labels.template.fontWeight = 500;
 categoryAxis.renderer.labels.template.adapter.add("fill", function(fill, target) {
   return (target.dataItem.index >= 0) ? chart.colors.getIndex(target.dataItem.index) : fill;
 });
-categoryAxis.renderer.minGridDistance = 20;
+categoryAxis.renderer.minGridDistance = 10;
 
 var valueAxis = chart.xAxes.push(new am4charts.ValueAxis());
 valueAxis.renderer.grid.template.strokeOpacity = 0;
