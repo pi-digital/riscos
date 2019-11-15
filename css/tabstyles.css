@@ -141,7 +141,9 @@
 }
 
 .tabs-style-underline nav a span {
-	font-weight: 500;
+	font-weight: normal;
+	text-transform: uppercase;
+	letter-spacing: 4px;
 }
 
 /*****************************/
