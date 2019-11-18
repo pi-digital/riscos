@@ -1,136 +1,60 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-	<head>
+<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1"> 
-		<title>Monitoramento | PI Digital</title>
-		<meta name="description" content="Painel de Monitoramento do Projeto de Transformação Digital dos Serviços Prestados pelo INPI" />
+		<title>Documentação | PI Digital</title>
+		<meta name="description" content="Documentação do Projeto de Transformação Digital dos Serviços Prestados pelo INPI" />
 		<meta name="keywords" content="transformação digital, serviços, atendimento, comunicação, interoperabilidade, dados abertos, segurança da informação" />
 		<meta name="author" content="Ouvidoria do INPI" />
-		<link rel="shortcut icon" href="../favicon.ico">
-		<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed&display=swap" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="css/vicons-font.css" />
-		<link rel="stylesheet" type="text/css" href="css/base.css" />
-		<link rel="stylesheet" type="text/css" href="css/buttons.css" />
-		<link rel="stylesheet" type="text/css" href="css/demo.css" />
-		<link rel="stylesheet" type="text/css" href="css/tabs.css" />
-		<link rel="stylesheet" type="text/css" href="css/tabstyles.css" />
-		<link rel="stylesheet" type="text/css" href="css/buttons.css" />
-		<script src="js/modernizr.custom.js"></script>
-		<!--[if IE]>
- 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]--><script>document.documentElement.className = 'js';</script>
- 		<script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript">
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-7243260-2']);
-_gaq.push(['_trackPageview']);
-(function() {
-var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-})();
-</script>
-<script>
-			(function() {
-				[].slice.call( document.querySelectorAll( '.tabs' ) ).forEach( function( el ) {
-					new CBPFWTabs( el );
-				});
-			})();
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/demo.css">
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.min.js"></script>
+	        <link rel="stylesheet" href="css/style.css" type="text/css" media="screen"/>
+  		<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed&display=swap" rel="stylesheet">
+		<script>
+			document.documentElement.className = 'js';
+			function browserCanUseCssVariables() { return window.CSS && window.CSS.supports && window.CSS.supports('--fake-var', 0); }
+			if (!browserCanUseCssVariables()) alert('Your browser does not support CSS Variables. Please use a modern browser to view this demo.');
 		</script>
-	<link rel="stylesheet" type="text/css" href="https://tympanus.net/codrops/adpacks/demoad.css?1567077121207">
-	<style>
-table {
-  font-family: 'Roboto Condensed';
-  border-collapse: collapse;
-}
-
-tx {
-  background-color: #308fd9;
-  color: #ffffff;
-  padding: 8px;
-}
-
-td {
-  border-bottom: 1px solid #308fd9;
-  vertical-align: middle;
-  text-align: left;
-  padding: 8px;
-}
-
-tr {
-  background-color: #ffffff;
-}
-</style>
-	</head>
-	<body>
-		<svg class="hidden">
-			<defs>
-				<path id="tabshape" d="M80,60C34,53.5,64.417,0,0,0v60H80z"></path>
-			</defs>
-		</svg>
-		<div class="container">
-			<!-- Top Navigation -->
-			<header class="codrops-header">
-				<a href="https://pi-digital.github.io/apresentacao/"><h1>Plano PI Digital</h1></a>
-				<h2>Monitoramento</h2>
-				<h5>ÚLTIMA ATUALIZAÇÃO<br>05/11/2019</h5>
-			</header>
-		</div>
-				<div class="tabs tabs-style-underline">
-					<nav>
-						<ul>
-							<li>
-								<a href="#section-underline-1">
-									<span>Realizado</span>
-								</a>
-							</li>
-							<li>
-								<a href="#section-underline-2">
-									<span>Previsto</span>
-								</a>
-							</li>
-							<li>
-								<a href="#section-underline-3">
-									<span>Status</span>
-								</a>
-							</li>
-							<li>
-								<a href="#section-underline-4">
-									<span>Cronograma</span>
-								</a>
-							</li>
-							<li>
-								<a href="#section-underline-5">
-									<span>Recursos</span>
-								</a>
-							</li>
-							<li>
-								<a href="#section-underline-6">
-									<span>Riscos</span>
-								</a>
-							</li>
-						</ul>
-					</nav>
-					<div class="content-wrap">
-						<section id="section-underline-1">
-<!-- Styles -->
-<style>
-#chartdiv {
-  width: 100%;
-  height: 1000px;
-  overflow: visible;
-  font-size: 0.6em;
-}
-	
-#imgdiv {
-  overflow: visible;
-  text-align: left;
-  padding-left: 30px;
-}
-	
-</style>
+        <style>
+            .title{
+                width:548px;
+                height:119px;
+                position:absolute;
+                top:400px;
+                left:150px;
+                background:transparent url(images/indicadores.png) no-repeat top left;
+            }
+            a.back{
+                background:transparent url(back.png) no-repeat top left;
+                position:fixed;
+                width:150px;
+                height:27px;
+                outline:none;
+                bottom:0px;
+                left:0px;
+            }
+            #content{
+                position: relative;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		font-weight: 300;
+		font-size: 1.15em;
+            }
+	    #chartdiv {
+  		width:1000px;
+		height: 1000px;
+  		position:absolute;
+		font-family: "Roboto Condensed";
+		top: -175px;
+    		left: -185px;
+	    }
+	</style>
 
 <!-- Resources -->
 <script src="https://www.amcharts.com/lib/4/core.js"></script>
@@ -148,356 +72,200 @@ am4core.useTheme(am4themes_animated);
 // Create chart instance
 var chart = am4core.create("chartdiv", am4charts.RadarChart);
 
-// Add data
-chart.data = [{
-"category": "Proteção de Dados Pessoais: #24",
-"value": 40,
-"full": 100
-}, {
-"category": "Expansão de Dados em Nuvem: #23",
-"value": 10,
-"full": 100
-}, {
-"category": "Análise de Viabilidade da Expansão de Dados em Nuvem: #22",
-"value": 20,
-"full": 100
-}, {
-"category": "Integração ao ConectaGov: #21",
-"value": 60,
-"full": 100
-}, {
-"category": "Análise de Viabilidade do ConectaGov: #20",
-"value": 100,
-"full": 100
-}, {
-"category": "Monitoramento do PI Digital: #19",
-"value": 100,
-"full": 100
-}, {
-"category": "Assistência Virtual por Chatbot: #18",
-"value": 20,
-"full": 100
-}, {
-"category": "Interação Eletrônica Informativa: #17",
-"value": 40,
-"full": 100
-}, {
-"category": "Nova Modelagem de Conteúdo Eletrônico: #16",
-"value": 40,
-"full": 100
-}, {
-"category": "Nova Versão de Publicação da RPI: #15",
-"value": 40,
-"full": 100
-}, {
-"category": "Plano de Dados Abertos do INPI: #14",
-"value": 100,
-"full": 100
-}, {
-"category": "Notificação Automática por SMS: #13",
-"value": 10,
-"full": 100
-}, {
-"category": "Guia de Atendimento do INPI: #12",
-"value": 40,
-"full": 100
-}, {
-"category": "Agendamento de Atendimento Presencial: #11",
-"value": 10,
-"full": 100
-}, {
-"category": "Módulo de Avaliação Pós-Consumo: #10",
-"value": 10,
-"full": 100
-}, {
-"category": "Novo Portal do INPI: #09",
-"value": 40,
-"full": 100
-}, {
-"category": "Novo Portal do INPI: #09",
-"value": 40,
-"full": 100
-}, {
-"category": "Novo BuscaWeb: #08",
-"value": 20,
-"full": 100
-}, {
-"category": "Automação do Fluxo de Pedidos de Patentes: #07",
-"value": 10,
-"full": 100
-}, {
-"category": "Módulo E-Chip: #06",
-"value": 100,
-"full": 100
-}, {
-"category": "Aplicativo (App): #05",
-"value": 10,
-"full": 100
-}, {
-"category": "Implementação do GovPay: #04",
-"value": 10,
-"full": 100
-}, {
-"category": "Diagnóstico de Transformação Digital: #03",
-"value": 100,
-"full": 100
-}, {
-"category": "Login Único (Acesso Br): #02",
-"value": 20,
-"full": 100
-}, {
-"category": "Nova Carta e Atualização do Portal de Serviços: #01",
-"value": 100,
-"full": 100
-}];
+var data = [];
 
-// Make chart not full circle
-chart.startAngle = -90;
-chart.endAngle = 180;
-chart.innerRadius = am4core.percent(10);
+chart.data = [
+  {
+    category: "#01",
+    value: 0
+  },
+  {
+    category: "#02",
+    value: 200
+  },
+  {
+    category: "#03",
+    value: 0
+  },
+  {
+    category: "#04",
+    value: 100
+  },
+  {
+    category: "#05",
+    value: 50
+  },
+  {
+    category: "#06",
+    value: 0
+  },
+ {
+    category: "#07",
+    value: 50
+  },
+ {
+    category: "#08",
+    value: 50
+  },
+ {
+    category: "#09",
+    value: 50
+  },
+ {
+    category: "#10",
+    value: 200
+  },
+ {
+    category: "#11",
+    value: 200
+  },
+ {
+    category: "#12",
+    value: 0
+  },
+ {
+    category: "#13",
+    value: 200
+  },
+ {
+    category: "#14",
+    value: 0
+  },
+ {
+    category: "#15",
+    value: 100
+  },
+ {
+    category: "#16",
+    value: 50
+  },
+ {
+    category: "#17",
+    value: 50
+  },
+ {
+    category: "#18",
+    value: 200
+  },
+ {
+    category: "#19",
+    value: 0
+  },
+ {
+    category: "#20",
+    value: 0
+  },
+ {
+    category: "#21",
+    value: 50
+  },
+ {
+    category: "#22",
+    value: 0
+  },
+ {
+    category: "#23",
+    value: 50
+  },
+ {
+    category: "#24",
+    value: 100
+  },
+];
 
-// Set number format
-chart.numberFormatter.numberFormat = "#.#'%'";
+chart.radius = am4core.percent(100);
+chart.innerRadius = am4core.percent(50);
 
 // Create axes
-var categoryAxis = chart.yAxes.push(new am4charts.CategoryAxis());
+var categoryAxis = chart.xAxes.push(new am4charts.CategoryAxis());
 categoryAxis.dataFields.category = "category";
 categoryAxis.renderer.grid.template.location = 0;
-categoryAxis.renderer.grid.template.strokeOpacity = 0;
-categoryAxis.renderer.labels.template.horizontalCenter = "right";
-categoryAxis.renderer.labels.template.fontWeight = 500;
-categoryAxis.renderer.labels.template.adapter.add("fill", function(fill, target) {
-	
-return (target.dataItem.index >= 0) ? chart.colors.getIndex(target.dataItem.index) : fill;
-});
-categoryAxis.renderer.minGridDistance = 5;
+categoryAxis.renderer.minGridDistance = 30;
+categoryAxis.tooltip.disabled = true;
+categoryAxis.renderer.minHeight = 110;
+categoryAxis.renderer.grid.template.disabled = true;
+//categoryAxis.renderer.labels.template.disabled = true;
+let labelTemplate = categoryAxis.renderer.labels.template;
+labelTemplate.radius = am4core.percent(-60);
+labelTemplate.location = 0.5;
+labelTemplate.relativeRotation = 90;
 
-var valueAxis = chart.xAxes.push(new am4charts.ValueAxis());
-valueAxis.renderer.grid.template.strokeOpacity = 0;
-valueAxis.min = 0;
-valueAxis.max = 100;
-valueAxis.strictMinMax = true;
+var valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
+valueAxis.renderer.grid.template.disabled = true;
+valueAxis.renderer.labels.template.disabled = true;
+valueAxis.tooltip.disabled = true;
 
 // Create series
-var series1 = chart.series.push(new am4charts.RadarColumnSeries());
-series1.dataFields.valueX = "full";
-series1.dataFields.categoryY = "category";
-series1.clustered = false;
-series1.columns.template.fill = new am4core.InterfaceColorSet().getFor("alternativeBackground");
-series1.columns.template.fillOpacity = 0.08;
-series1.columns.template.cornerRadiusTopLeft = 20;
-series1.columns.template.strokeWidth = 0;
-series1.columns.template.radarColumn.cornerRadius = 20;
+var series = chart.series.push(new am4charts.RadarColumnSeries());
+series.sequencedInterpolation = true;
+series.dataFields.valueY = "value";
+series.dataFields.categoryX = "category";
+series.columns.template.strokeWidth = 0;
+series.tooltipText = "{valueY}";
+series.columns.template.radarColumn.cornerRadius = 10;
+series.columns.template.radarColumn.innerCornerRadius = 0;
 
-var series2 = chart.series.push(new am4charts.RadarColumnSeries());
-series2.dataFields.valueX = "value";
-series2.dataFields.categoryY = "category";
-series2.clustered = false;
-series2.columns.template.strokeWidth = 0;
-series2.columns.template.tooltipText = "{category}: [bold]{value}[/]";
-series2.columns.template.radarColumn.cornerRadius = 20;
+series.tooltip.pointerOrientation = "vertical";
 
-series2.columns.template.adapter.add("fill", function(fill, target) {
+// on hover, make corner radiuses bigger
+let hoverState = series.columns.template.radarColumn.states.create("hover");
+hoverState.properties.cornerRadius = 0;
+hoverState.properties.fillOpacity = 1;
+
+
+series.columns.template.adapter.add("fill", function(fill, target) {
   return chart.colors.getIndex(target.dataItem.index);
-});
+})
 
-// Add cursor
+// Cursor
 chart.cursor = new am4charts.RadarCursor();
-});
-
-// end am4core.ready()
-</script>
-
-<style>
-#chartdiv2 {
-  width: 100%;
-  height: 1000px;
-}
-
-</style>
-
-<!-- Resources -->
-<script src="https://www.amcharts.com/lib/4/core.js"></script>
-<script src="https://www.amcharts.com/lib/4/charts.js"></script>
-<script src="https://www.amcharts.com/lib/4/plugins/timeline.js"></script>
-<script src="https://www.amcharts.com/lib/4/plugins/bullets.js"></script>
-<script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
-
-<!-- Chart code -->
-<script>
-am4core.ready(function() {
-
-// Themes begin
-am4core.useTheme(am4themes_animated);
-// Themes end
-
-var chart = am4core.create("chartdiv", am4plugins_timeline.SpiralChart);
-//chart.curveContainer.padding(20,20,20,20);
-chart.levelCount = 2;
-chart.yAxisRadius = am4core.percent(25);
-chart.yAxisInnerRadius = am4core.percent(-25);
-chart.startAngle = -90;
-
-var colorSet = new am4core.ColorSet();
-
-chart.data = [ {
-  "category": "Module #1",
-  "start": "2016-01-10",
-  "end": "2016-01-13",
-  "color": colorSet.getIndex(0),
-  "task": "Gathering requirements"
-}, {
-  "category": "Module #1",
-  "start": "2016-02-05",
-  "end": "2016-04-18",
-  "color": colorSet.getIndex(0),
-  "task": "Development"
-}, {
-  "category": "Module #2",
-  "start": "2016-01-08",
-  "end": "2016-01-10",
-  "color": colorSet.getIndex(5),
-  "task": "Gathering requirements"
-}, {
-  "category": "Module #2",
-  "start": "2016-01-12",
-  "end": "2016-01-15",
-  "color": colorSet.getIndex(5),
-  "task": "Producing specifications"
-}, {
-  "category": "Module #2",
-  "start": "2016-01-16",
-  "end": "2016-02-05",
-  "color": colorSet.getIndex(5),
-  "task": "Development"
-}, {
-  "category": "Module #2",
-  "start": "2016-02-10",
-  "end": "2016-02-18",
-  "color": colorSet.getIndex(5),
-  "task": "Testing and QA"
-}, {
-  "category": "",
-  "task": ""
-},{
-  "category": "Module #3",
-  "start": "2016-01-01",
-  "end": "2016-01-19",
-  "color": colorSet.getIndex(9),
-  "task": "Gathering requirements"
-}, {
-  "category": "Module #3",
-  "start": "2016-02-01",
-  "end": "2016-02-10",
-  "color": colorSet.getIndex(9),
-  "task": "Producing specifications"
-}, {
-  "category": "Module #3",
-  "start": "2016-03-10",
-  "end": "2016-04-15",
-  "color": colorSet.getIndex(9),
-  "task": "Development"
-}, {
-  "category": "Module #3",
-  "start": "2016-04-20",
-  "end": "2016-04-30",
-  "color": colorSet.getIndex(9),
-  "task": "Testing and QA"
-}, {
-  "category": "Module #4",
-  "start": "2016-01-15",
-  "end": "2016-02-12",
-  "color": colorSet.getIndex(15),
-  "task": "Gathering requirements"
-},{
-  "category": "Module #4",
-  "start": "2016-02-25",
-  "end": "2016-03-10",
-  "color": colorSet.getIndex(15),
-  "task": "Development"
-}, {
-  "category": "Module #4",
-  "start": "2016-03-23",
-  "end": "2016-04-29",
-  "color": colorSet.getIndex(15),
-  "task": "Testing and QA"
-} ];
-
-chart.dateFormatter.dateFormat = "dd-MM-yyyy";
-chart.dateFormatter.inputDateFormat = "dd-MM-yyyy";
-chart.fontSize = 11;
-
-var categoryAxis = chart.yAxes.push(new am4charts.CategoryAxis());
-categoryAxis.dataFields.category = "category";
-categoryAxis.renderer.grid.template.disabled = true;
-categoryAxis.renderer.labels.template.paddingRight = 25;
-categoryAxis.renderer.minGridDistance = 10;
-categoryAxis.renderer.innerRadius = -60;
-categoryAxis.renderer.radius = 60;
-categoryAxis.renderer.labels.template.disabled = true;
-
-var dateAxis = chart.xAxes.push(new am4charts.DateAxis());
-dateAxis.renderer.minGridDistance = 70;
-dateAxis.baseInterval = { count: 1, timeUnit: "day" };
-dateAxis.renderer.tooltipLocation = 0;
-dateAxis.startLocation = -0.5;
-dateAxis.renderer.line.strokeDasharray = "1,4";
-dateAxis.renderer.line.strokeOpacity = 0.7;
-dateAxis.tooltip.background.fillOpacity = 0.2;
-dateAxis.tooltip.background.cornerRadius = 5;
-dateAxis.tooltip.label.fill = new am4core.InterfaceColorSet().getFor("alternativeBackground");
-dateAxis.tooltip.label.paddingTop = 7;
-
-var labelTemplate = dateAxis.renderer.labels.template;
-labelTemplate.verticalCenter = "middle";
-labelTemplate.fillOpacity = 0.7;
-labelTemplate.background.fill = new am4core.InterfaceColorSet().getFor("background");
-labelTemplate.background.fillOpacity = 1;
-labelTemplate.padding(7,7,7,7);
-
-var series1 = chart.series.push(new am4plugins_timeline.CurveColumnSeries());
-series1.columns.template.height = am4core.percent(20);
-series1.columns.template.tooltipText = "{task}: [bold]{openDateX}[/] - [bold]{dateX}[/]";
-
-series1.dataFields.openDateX = "start";
-series1.dataFields.dateX = "end";
-series1.dataFields.categoryY = "category";
-series1.columns.template.propertyFields.fill = "color"; // get color from data
-series1.columns.template.propertyFields.stroke = "color";
-series1.columns.template.strokeOpacity = 0;
-
-var bullet = new am4charts.CircleBullet();
-series1.bullets.push(bullet);
-bullet.circle.radius = 3;
-bullet.circle.strokeOpacity = 0;
-bullet.propertyFields.fill = "color";
-bullet.locationX = 0;
-
-var bullet2 = new am4charts.CircleBullet();
-series1.bullets.push(bullet2);
-bullet2.circle.radius = 3;
-bullet2.circle.strokeOpacity = 0;
-bullet2.propertyFields.fill = "color";
-bullet2.locationX = 1;
-
-chart.scrollbarX = new am4core.Scrollbar();
-chart.scrollbarX.align = "center"
-chart.scrollbarX.width = am4core.percent(70);
-
-var cursor = new am4plugins_timeline.CurveCursor();
-chart.cursor = cursor;
-cursor.xAxis = dateAxis;
-cursor.yAxis = categoryAxis;
-cursor.lineY.disabled = true;
-cursor.lineX.strokeDasharray = "1,4";
-cursor.lineX.strokeOpacity = 1;
-
-dateAxis.renderer.tooltipLocation2 = 0;
-categoryAxis.cursorTooltipEnabled = false;
+chart.cursor.innerRadius = am4core.percent(50);
+chart.cursor.lineY.disabled = true;
 
 }); // end am4core.ready()
 </script>
 
+	</head>
+
+    <body>
+		<svg class="hidden">
+			<defs>
+				<path id="tabshape" d="M80,60C34,53.5,64.417,0,0,0v60H80z"></path>
+			</defs>
+		</svg>
+		<div class="container">
+			<!-- Top Navigation -->
+			<header class="codrops-header">
+				<a href="https://pi-digital.github.io/apresentacao/"><h1>Plano PI Digital</h1></a>
+				<h2>Riscos</h2>
+				<h5>ÚLTIMA ATUALIZAÇÃO<br>05/11/2019</h5>
+			</header>
+		</div>
+<div class="content-wrap">
+						<section id="section-underline-1">
+	<div id="chartdiv"></div>
+	<div class="pricing pricing--jinpa">
+                <div class="pricing__item">
+                    <h2 class="pricing__title">Set/2019</h2>
+<div class="box bg-3">
+<a class="button button--tamaya button--round-s button--text-thick button--border-thin" data-text="Download" href="https://pi-digital.github.io/monitoramento/docs/Plano PI Digital - Status Report (set-2019).xlsx" download><span>Status Report</span></a>
+            </div>
+	         </div>
+                <div class="pricing__item">
+                    <h2 class="pricing__title">Out/2019</h2>
+<div class="box bg-3">
+<a class="button button--tamaya button--round-s button--text-thick button--border-thin" data-text="Download" href="https://pi-digital.github.io/monitoramento/docs/Plano PI Digital - Status Report (out-2019).xlsx" download><span>Status Report</span></a></button>
+            </div>
+	         </div>
+                <div class="pricing__item">
+                    <h2 class="pricing__title">Nov/2019</h2>
+<div class="box bg-3">
+<a class="button button--tamaya button--round-s button--text-thick button--border-thin" data-text="Download" href="https://pi-digital.github.io/monitoramento/docs/Plano PI Digital - Status Report (nov-2019).xlsx" download><span>Status Report</span></a></button>
+            </div>
+	         </div>
+		        </div>
+					</section>
+					<section id="section-underline-2">
 <table>
   <tr>
     <td><tx>05/09/2019</tx></td>
@@ -533,7 +301,7 @@ categoryAxis.cursorTooltipEnabled = false;
   </tr>
 </table>
 						</section>
-						<section id="section-underline-2">
+						<section id="section-underline-3">
 <table>
   <tr>
     <td><tx>05/12/2019</tx></td>
@@ -541,78 +309,25 @@ categoryAxis.cursorTooltipEnabled = false;
   </tr>
 </table>
 						</section>
-						<section id="section-underline-3">
-	<div id="imgdiv">
-		<img src="images/indicadores.png" style="width:250px">
-	</div>
-	<div id="chartdiv"></div>
-	<div class="pricing pricing--jinpa">
-                <div class="pricing__item">
-                    <h2 class="pricing__title">Set/2019</h2>
-<div class="box bg-3">
-<a class="button button--tamaya button--round-s button--text-thick button--border-thin" data-text="Download" href="https://github.com/pi-digital/monitoramento/blob/master/docs/Plano%20PI%20Digital%20-%20Status%20Report%20(set-2019).xlsx" download><span>Status Report</span></a>
-            </div>
-	         </div>
-                <div class="pricing__item">
-                    <h2 class="pricing__title">Out/2019</h2>
-<div class="box bg-3">
-<a class="button button--tamaya button--round-s button--text-thick button--border-thin" data-text="Download" href="https://github.com/pi-digital/monitoramento/blob/master/docs/Plano%20PI%20Digital%20-%20Status%20Report%20(out-2019).xlsx" download><span>Status Report</span></a></button>
-            </div>
-	         </div>
-                <div class="pricing__item">
-                    <h2 class="pricing__title">Nov/2019</h2>
-<div class="box bg-3">
-<a class="button button--tamaya button--round-s button--text-thick button--border-thin" data-text="Download" href="https://github.com/pi-digital/monitoramento/blob/master/docs/Plano%20PI%20Digital%20-%20Status%20Report%20(nov-2019).xlsx" download><span>Status Report</span></a></button>
-            </div>
-	         </div>
-		        </div>
-					</section>
-						<section id="section-underline-4">
-							<div id="chartdiv"></div>
-							<div class="box bg-3">
-								<a class="button button--tamaya button--round-s button--text-thick button--border-thin" data-text="Download" href="https://github.com/pi-digital/monitoramento/raw/master/docs/Plano%20PI%20Digital%20-%20Cronograma.xlsx" download><span>Cronograma</span></a></button>
-							</div>
-						</section>
-						<section id="section-underline-5">
-							<p>À vista das restrições de recursos humanos do INPI, foi identificada a necessidade da ampliação da capacidade de produção que habilite o Instituto a promover as entregas estratégicas previstas no Plano PI Digital. Nesse sentido, a alocação de profissionais com perfil técnico qualificado, para apoio no desenvolvimento de soluções de automação, constitui premissa de primeira ordem para o tempestivo e adequado cumprimento das ações de transformação digital do Plano.</p>
-							<p>No período de 7 de outubro a 1º de novembro de 2019, a partir do processo seletivo instaurado pela Secretaria de Governo Digital, foram recebidos 28 (vinte e oito) currículos de candidatos interessados ao desempenho de atividades relacionadas a:</p>
-							<h5>Análise / Desenvolvimento de Sistema (3 vagas)<br>
-							Arquitetura de Software (1 vaga)<br>
-							Experiência com o Usuário (UX) (1 vaga)<br>
-							Gestão de Processos (1 vaga)</h5>
-							<p>Os participantes do certame apresentaram os seguintes órgãos ou entes públicos de procedência:</p>
-							<h5>Casa da Moeda do Brasil (10)<br>
-							BB Tecnologia e Serviços (5)<br>
-							Infraero (4)<br>
-							Instituto Brasileiro de Geografia e Estatística - IBGE (2)<br>
-							Nuclebras Equipamentos Pesados (1)<br>
-							Instituto Federal de Ciência e Tecnologia do Rio de Janeiro (1)<br>
-							Secretaria do Trabalho do Ministério da Economia (1)<br>
-							Petróleo Brasileiro S/A - Petrobrás (1)<br>
-							Universidade Federal Rural de Pernambuco (1)<br>
-							Empresa de Tecnologia e Informações da Previdência -Dataprev (1)<br>
-							Instituto Federal do Paraná (1)</h5>
-							<p>As próximas etapas do processo de seleção são a realização de entrevistas, presenciais ou por videoconferência, de 4 a 8 de novembro de 2019, seguida da divulgação do resultado final no Portal do INPI, até o dia 11 de novembro de 2019.</p>
-							<div class="box bg-3">
-								<a class="button button--tamaya button--round-s button--text-thick button--border-thin" data-text="Download" href="https://github.com/pi-digital/monitoramento/raw/master/docs/Plano%20PI%20Digital%20-%20Edital%20de%20Sele%C3%A7%C3%A3o.pdf" download><span>Edital de Seleção</span></a></button>
-							</div>
-						</section>
-						<section id="section-underline-6">
-							<div class="box bg-3">
-								<a class="button button--tamaya button--round-s button--text-thick button--border-thin" data-text="Download" href="https://github.com/pi-digital/monitoramento/raw/master/docs/PI%20Digital%20-%20Controle%20de%20Riscos.xlsx" download><span>Controle de Riscos</span></a></button>
-							</div>
-						</section>
 					</div><!-- /content -->
 				</div><!-- /tabs -->
 		<script src="js/cbpFWTabs.js"></script>
 		<script>
 			(function() {
-
 				[].slice.call( document.querySelectorAll( '.tabs' ) ).forEach( function( el ) {
 					new CBPFWTabs( el );
 				});
-
 			})();
 		</script>
 	</body>
 </html>
+
+    © 2019 GitHub, Inc.
+    Terms
+    Privacy
+    Security
+    Status
+    Help
+
+Contact GitHub
+Prici
