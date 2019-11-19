@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>Riscos | PI Digital</title>
+		<meta name="description" content="Mapeamentpo de Riscos do Projeto de Transformação Digital dos Serviços Prestados pelo INPI" />
+		<meta name="keywords" content="transformação digital, serviços, atendimento, comunicação, interoperabilidade, dados abertos, segurança da informação" />
+		<meta name="author" content="Ouvidoria do INPI" />
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/demo.css">
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.min.js"></script>
+	        <link rel="stylesheet" href="css/style.css" type="text/css" media="screen"/>
+  		<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed&display=swap" rel="stylesheet">
+		<script>
+			document.documentElement.className = 'js';
+			function browserCanUseCssVariables() { return window.CSS && window.CSS.supports && window.CSS.supports('--fake-var', 0); }
+			if (!browserCanUseCssVariables()) alert('Your browser does not support CSS Variables. Please use a modern browser to view this demo.');
+		</script>
+        <style>
+	    #chartdiv {
+  		width:1000px;
+		height: 1000px;
+		font-family: "Roboto Condensed";
+		display: table-row;
+	    }
+	</style>
+
+<!-- Resources -->
+<script src="https://www.amcharts.com/lib/4/core.js"></script>
+<script src="https://www.amcharts.com/lib/4/charts.js"></script>
+<script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+
+<!-- Chart code -->
+<script>
+am4core.ready(function() {
+
+// Themes begin
+am4core.useTheme(am4themes_animated);
+// Themes end
+
+// Create chart instance
+var chart = am4core.create("chartdiv", am4charts.RadarChart);
+
+var data = [];
+
+chart.data = [
+  {
+    category: "#01",
+    value: 0
+  },
+  {
+    category: "#02",
+    value: 0
+  },
+  {
+    category: "#03",
+    value: 0
+  },
+  {
+    category: "#04",
+    value: 0
+  },
+  {
+    category: "#05",
+    value: 200
+  },
+  {
+    category: "#06",
+    value: 0
+  },
+ {
+    category: "#07",
+    value: 0
+  },
+ {
+    category: "#08",
+    value: 100
+  },
+ {
+    category: "#09",
+    value: 100
+  },
+ {
+    category: "#10",
+    value: 200
+  },
+ {
+    category: "#11",
+    value: 100
+  },
+ {
+    category: "#12",
+    value: 0
+  },
+ {
+    category: "#13",
+    value: 0
+  },
+ {
+    category: "#14",
+    value: 200
+  },
+ {
+    category: "#15",
+    value: 100
+  },
+ {
+    category: "#16",
+    value: 100
+  },
+ {
+    category: "#17",
+    value: 100
+  },
+ {
+    category: "#18",
+    value: 100
+  },
+ {
+    category: "#19",
+    value: 0
+  },
+ {
+    category: "#20",
+    value: 0
+  },
+ {
+    category: "#21",
+    value: 0
+  },
+ {
+    category: "#22",
+    value: 0
+  },
+ {
+    category: "#23",
+    value: 0
+  },
+ {
+    category: "#24",
+    value: 200
+  },
+];
+
+chart.radius = am4core.percent(100);
+chart.innerRadius = am4core.percent(50);
+
+// Create axes
+var categoryAxis = chart.xAxes.push(new am4charts.CategoryAxis());
+categoryAxis.dataFields.category = "category";
+categoryAxis.renderer.grid.template.location = 0;
+categoryAxis.renderer.minGridDistance = 30;
+categoryAxis.tooltip.disabled = true;
+categoryAxis.renderer.minHeight = 110;
+categoryAxis.renderer.grid.template.disabled = true;
+//categoryAxis.renderer.labels.template.disabled = true;
+let labelTemplate = categoryAxis.renderer.labels.template;
+labelTemplate.radius = am4core.percent(-60);
+labelTemplate.location = 0.5;
+labelTemplate.relativeRotation = 90;
+
+var valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
+valueAxis.renderer.grid.template.disabled = true;
+valueAxis.renderer.labels.template.disabled = true;
+valueAxis.tooltip.disabled = true;
+
+// Create series
+var series = chart.series.push(new am4charts.RadarColumnSeries());
+series.sequencedInterpolation = true;
+series.dataFields.valueY = "value";
+series.dataFields.categoryX = "category";
+series.columns.template.strokeWidth = 0;
+series.tooltipText = "{valueY}";
+series.columns.template.radarColumn.cornerRadius = 10;
+series.columns.template.radarColumn.innerCornerRadius = 0;
+
+series.tooltip.pointerOrientation = "vertical";
+
+// on hover, make corner radiuses bigger
+let hoverState = series.columns.template.radarColumn.states.create("hover");
+hoverState.properties.cornerRadius = 0;
+hoverState.properties.fillOpacity = 1;
+
+
+series.columns.template.adapter.add("fill", function(fill, target) {
+  return chart.colors.getIndex(target.dataItem.index);
+})
+
+// Cursor
+chart.cursor = new am4charts.RadarCursor();
+chart.cursor.innerRadius = am4core.percent(50);
+chart.cursor.lineY.disabled = true;
+
+}); // end am4core.ready()
+</script>
+
+	</head>
+
+    <body>
+		<svg class="hidden">
+			<defs>
+				<path id="tabshape" d="M80,60C34,53.5,64.417,0,0,0v60H80z"></path>
+			</defs>
+		</svg>
+		<div class="container">
+			<!-- Top Navigation -->
+			<header class="codrops-header">
+				<a href="https://pi-digital.github.io/apresentacao/"><h1>Plano PI Digital</h1></a>
+	<div class="pricing pricing--jinpa">
+                <div class="pricing__item">
+                    <div class="pricing__title">
+			<nav class="codrops-demos">
+				<a class="current-demo" href="index.html">INSUFIÊNCIA DE PROFISSIONAIS ESPECIALIZADOS</a>
+			    </nav>
+		    </div>
+	         </div>
+                <div class="pricing__item">
+                    <h2 class="pricing__title">Riscos</h2>
+			<h5>ÚLTIMA ATUALIZAÇÃO<br>05/11/2019</h5>
+	         </div>
+                <div class="pricing__item">
+                    <div class="pricing__title">
+			    <nav class="codrops-demos">
+				<a class="current-demo" href="index2.html">INEXPERIÊNCIA NA REALIZAÇÃO DE HACKATHON</a>
+			    </nav>
+		    </div>
+	</div>
+			</header>
+		</div>
+	<div id="chartdiv"></div>
+		<script src="js/cbpFWTabs.js"></script>
+		<script>
+			(function() {
+				[].slice.call( document.querySelectorAll( '.tabs' ) ).forEach( function( el ) {
+					new CBPFWTabs( el );
+				});
+			})();
+		</script>
+	</body>
+</html>
