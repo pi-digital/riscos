@@ -20,6 +20,10 @@
 			function browserCanUseCssVariables() { return window.CSS && window.CSS.supports && window.CSS.supports('--fake-var', 0); }
 			if (!browserCanUseCssVariables()) alert('Your browser does not support CSS Variables. Please use a modern browser to view this demo.');
 		</script>
+	
+
+	</head>
+	
         <style>
 	    #chartdiv {
   		width:1000px;
@@ -249,8 +253,6 @@ chart.cursor.lineY.disabled = true;
 
 }); // end am4core.ready()
 </script>
-
-	</head>
 
     <body>
 		<svg class="hidden">
