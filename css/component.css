@@ -37,7 +37,6 @@
 }
 
 .pricing--jinpa .pricing__item {
-    font-family: 'Sahitya', serif;
     cursor: default;
     color: #fff;
     -webkit-transition: background-color 0.6s, color 0.3s;
@@ -1365,9 +1364,8 @@
 	color: inherit;
 	background: none;
 	cursor: pointer;
-	padding: 25px 80px;
+	padding: 15px 60px;
 	display: inline-block;
-	margin: 15px 30px;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-weight: 700;
@@ -1633,9 +1631,9 @@
 
 /* Button 2 */
 .btn-2 {
-	background: #cb4e4e;
+	background: #308fd9;
 	color: #fff;
-	box-shadow: 0 6px #ab3c3c;
+	box-shadow: 0 6px #1c6197;
 	-webkit-transition: none;
 	-moz-transition: none;
 	transition: none;
