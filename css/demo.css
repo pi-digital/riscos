@@ -141,21 +141,18 @@ p {
 
 /* Codrops demo links */
 .codrops-demos {
-	margin: 0 auto;
+	margin: 45px;
 }
 
 .codrops-demos a {
-	font-weight: 700;
+	font-weight: 500;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	padding: 0.25em 0;
 	margin: 5px 10px;
 	display: inline-block;
-	font-size: 0.85em;
-}
-
-.codrops-demos a.current-demo {
-	opacity: 0.5;
+	font-size: 1.15em;
+	line-height: 1em;
 }
 
 /* To Navigation Style */
